@@ -13,6 +13,7 @@ body {
     height: 100%;
     @include box_flex;
     @include direction(column);
+    background: #F0EFED;
 }
 
 header {
@@ -50,5 +51,41 @@ header {
 section {
     width: 100%;
     @include flex;
-    background: pink;
+    .sec-top {
+        width: 100%;
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+    .sec-con {
+        width: 100%;
+        .swiper-container {
+            width: 100%;
+            .swiper-wrapper {
+                width: 100%;
+                .swiper-slide {
+                    width: 100%;
+                    @include box_flex;
+                    @include flexWrap(wrap);
+                    background: #fff;
+                    padding-bottom: pxTorem(20px);
+                    dl {
+                        margin-top: pxTorem(10px);
+                        width: 20%;
+                        text-align: center;
+                        dt {
+                            width: 100%;
+                            height: auto;
+                            img {
+                                width: 50%;
+                                height: auto;
+                                border-radius: 50%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
