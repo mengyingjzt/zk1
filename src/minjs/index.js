@@ -1,0 +1,1 @@
+$(function(){new Swiper(".banner",{pagination:{el:".swiper-pagination"}}),$.ajax({url:"/api/swiper",dataType:"json",success:function(n){console.log(n)}})});

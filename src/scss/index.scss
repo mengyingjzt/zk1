@@ -23,6 +23,7 @@ header {
     @include box_flex;
     @include justify(space-between);
     @include align(center);
+    @include flex_shrink(0);
     p {
         width: pxTorem(50px);
         height: 100%;
@@ -87,5 +88,16 @@ section {
                 }
             }
         }
+    }
+}
+
+.sec-bot {
+    padding: 0 pxTorem(10px);
+    background: #fff;
+    margin-top: pxTorem(10px);
+    h2 {
+        padding: pxTorem(10px) 0;
+        font-size: pxTorem(16px);
+        border-bottom: 1px solid #ccc;
     }
 }
